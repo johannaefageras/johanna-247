@@ -1,0 +1,42 @@
+{
+	"/": [
+		"src/routes/+page.server.ts",
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/account": [
+		"src/routes/account/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/api/chat": [
+		"src/routes/api/chat/+server.ts"
+	],
+	"/api/chat/title": [
+		"src/routes/api/chat/title/+server.ts"
+	],
+	"/api/conversations": [
+		"src/routes/api/conversations/+server.ts"
+	],
+	"/api/conversations/[id]/messages": [
+		"src/routes/api/conversations/[id]/messages/+server.ts"
+	],
+	"/auth/callback": [
+		"src/routes/auth/callback/+server.ts"
+	],
+	"/history": [
+		"src/routes/history/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/login": [
+		"src/routes/login/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/reset-password": [
+		"src/routes/reset-password/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/signup": [
+		"src/routes/signup/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	]
+}

@@ -1,0 +1,121 @@
+/* ==========================================================================
+   GT Pressura Typography System
+
+   Variable Font Axes:
+   - wght (Weight): 300-900
+   - wdth (Width/Stretch): 100%-150% (100=Normal, 150=Extended)
+   - ital (Italic): 0-1 (0=Normal, 1=Italic)
+
+   Design Philosophy:
+   GT Pressura embodies the warmth of analog printing - the visual gesture
+   of ink spreading under pressure. Its industrial horizontals and mechanical
+   construction create a utilitarian aesthetic perfect for this app.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'GT Pressura';
+  src:
+    url('../fonts/GTPressura.woff2') format('woff2'),
+    url('../fonts/GTPressura.woff') format('woff'),
+    url('../fonts/GTPressura.ttf') format('truetype');
+  font-weight: 300 900;
+  font-stretch: 100% 150%;
+  font-style: normal italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT Pressura Mono';
+  src:
+    url('../fonts/GTPressuraMono.woff2') format('woff2'),
+    url('../fonts/GTPressuraMono.woff') format('woff'),
+    url('../fonts/GTPressuraMono.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal italic;
+  font-display: swap;
+}
+
+:root {
+  /* Font Families */
+  --font-primary: 'GT Pressura', system-ui, sans-serif;
+  --font-mono: 'GT Pressura Mono', ui-monospace, monospace;
+
+  /* Legacy aliases for compatibility */
+  --font-heading: var(--font-primary);
+  --font-body: var(--font-primary);
+  --font-ui: var(--font-primary);
+
+  /* Border Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+  /* ==========================================================================
+	   Typography Scale
+
+	   Using a modular scale based on 1.2 (minor third) ratio
+	   Base: 17px for optimal readability with GT Pressura's character width
+	   ========================================================================== */
+
+  --text-xs: 0.87rem; /* ~11.8px - micro labels */
+  --text-sm: 0.95rem; /* ~14.2px - small UI text */
+  --text-base: 1.03rem; /* 17px - body text */
+  --text-md: 1.125rem; /* ~19px - slightly emphasized */
+  --text-lg: 1.25rem; /* ~21px - subheadings */
+  --text-xl: 1.5rem; /* ~25.5px - section titles */
+  --text-2xl: 1.875rem; /* ~32px - page titles */
+  --text-3xl: 2.25rem; /* ~38px - hero titles */
+  --text-4xl: 3rem; /* ~51px - display */
+
+  /* ==========================================================================
+	   Line Heights
+
+	   GT Pressura benefits from generous line-height due to its mechanical,
+	   industrial character. Tighter for headings, looser for body text.
+	   ========================================================================== */
+
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.25;
+  --leading-base: 1.4;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose: 1.8;
+
+  /* ==========================================================================
+	   Letter Spacing
+
+	   GT Pressura's mechanical construction means:
+	   - Body text: slight positive tracking improves readability
+	   - Headings: tighter tracking for large sizes
+	   - Small caps/labels: open tracking for legibility
+	   ========================================================================== */
+
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* ==========================================================================
+	   Font Weights
+
+	   GT Pressura variable weight range: 300-900
+	   Each weight appears slightly heavier than the name suggests to reflect
+	   the results of ink under pressure.
+	   ========================================================================== */
+
+  --weight-light: 300;
+  --weight-book: 375;
+  --weight-regular: 415;
+  --weight-news: 450;
+  --weight-medium: 480; /* Slightly heavier than typical 500 */
+  --weight-semibold: 560; /* Between medium and bold */
+  --weight-bold: 650; /* Robust but not too heavy */
+  --weight-extrabold: 750;
+  --weight-heavy: 825;
+  --weight-black: 900;
+}
