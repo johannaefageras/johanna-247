@@ -197,9 +197,10 @@ body.chat-active {
     background var(--dur) var(--ease);
 }
 
-.theme-toggle svg {
-  height: 1em;
-  width: 1em;
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 .theme-toggle:hover {
